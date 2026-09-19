@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>⛄︎</title>
+    <style>
+        /* Game styling */
+        body {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #25ffff;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #0f579f;
+        }
+
+        #cookie {
+            width: 200px;
+            height: 200px;
+            background: url(https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/799829490_1066656463018027_1037784669841723802_n.jpg?stp=dst-jpg_tt6&cstp=mx494x506&ctp=p206x206&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=bd9a62&_nc_eui2=AeEM3c9HG5tJrnFAVNEemftlFqKIvf0m-zkWooi9_Sb7OUnUPTxvPaCEaBXS8pjDnbwaKVWZCbo0cGMg3ORXzj-g&_nc_ohc=zYU8973gTeMQ7kNvwF182DU&_nc_oc=AdqUBiElv2E6Yrry3lk5F3Ch5hA7Hta36WePiKlt9YSPSg-08HjvZH3ghAIMquVsNR7h3wZDBikgPqcpyHkgotMS&_nc_zt=23&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=2m9MlO80_FLHe8Z3BHtX5Q&_nc_ss=7b2a8&oh=00_AQJv-fBPMp2WVpzIxQiVB5aeMug38ZSyhcMyytKlZ7MEbw&oe=6AB01748);
+            border-radius: 10%;
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+            position: relative;
+        }
+
+        #cookie:active {
+            transform: scale(0.8);
+        }
+
+        #score {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #1c17a8;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #13238b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2eb2fa;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><strong> CLICK ME ว่างก็กดเล่น XD </strong></h2>
+    <p>Score: <span id="score">0</span></p>
+    <div id="cookie">
+        <div class="chocolate-chip chip1"></div>
+        <div class="chocolate-chip chip2"></div>
+        <div class="chocolate-chip chip3"></div>
+        <div class="chocolate-chip chip4"></div>
+        <div class="chocolate-chip chip5"></div>
+        <div class="chocolate-chip chip6"></div>
+        <div class="chocolate-chip chip7"></div>
+    </div>
+    <br><br>
+    <button id="reset-button">Reset เริ่มใหม่</button>
+
+    <script>
+        let score = 0;
+
+        // Increment score on cookie click
+        const cookie = document.getElementById('cookie');
+        const scoreDisplay = document.getElementById('score');
+        const resetButton = document.getElementById('reset-button');
+
+        cookie.addEventListener('click', () => {
+            score++;
+            scoreDisplay.textContent = score;
+        });
+
+        // Reset the score
+        resetButton.addEventListener('click', () => {
+            score = 0;
+            scoreDisplay.textContent = score;
+        });
+    </script>
+<a href="Denizen_Website.html"><p><strong>Home</strong></p></i></a>
+</body>
+
+</html>
