@@ -207,7 +207,7 @@ header .navbar a{
 }
 
 .home {
-background: img src="bgnakrub.jpg" alt="bgya" no-repeat;
+background: img src="./bgnakrub.jpg" alt="bgya" no-repeat;
  background-size: 1680px 1050px;
  display: flex;
  background-position: right;
